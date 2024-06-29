@@ -198,12 +198,18 @@ form input {
     display: none;
 }
 
-.error {
+input:invalid {
     background-color: rgba(245, 173, 173, 0.5);
     border: 1px solid var(--tomato);
     color: var(--tomato);
 }
 
+.error {
+    font-size: 0.575rem;
+    color: var(--tomato);
+    align-self: flex-end;
+    position: absolute;
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

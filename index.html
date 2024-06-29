@@ -29,8 +29,10 @@
           <li>And much more!</li>
         </ul>
 
-        <form action="form">
+        <form name="form" novalidate>
+          
           <label for="email">Email address</label>
+          <span class="error"></span>
           <input type="email" name="email" id="email" placeholder="email@company.com">
           <button class="btn">Subscribe to monthly newsletter</button>
         </form>
@@ -53,7 +55,7 @@
     <p>A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. 
     Please open it and click the button inside to confirm your subscription.</p>
 
-    <a class="btn" href="#">Dismiss message</a>
+    <button class="btn" href="#">Dismiss message</button>
   </section>  
   <!-- Success message end -->
 
