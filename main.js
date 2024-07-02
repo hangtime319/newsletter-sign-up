@@ -16,8 +16,7 @@ email.addEventListener("input", (e) => {
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    if(email != '' && email.validity.valid) {
-        // error.className = "error";
+    if(email.value != "" && email.validity.valid) {
         cardForm.classList.toggle('display-none');
         cardSuccess.classList.toggle('display-none');
     } else {
